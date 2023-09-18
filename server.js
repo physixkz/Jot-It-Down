@@ -54,8 +54,8 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 app.put('/api/notes/:id', (req, res) => {
-  const noteId = req.params.id;
-  const updatedNote = req.body;
+  const noteId = req.params.id; // Extract the note ID from the URL
+  const updatedNote = req.body; // Get the updated note data from the request body
 
   // Find the note in your `notes` array using the ID and update its properties
   const noteToUpdate = notes.find((note) => note.id === noteId);
@@ -75,13 +75,14 @@ app.put('/api/notes/:id', (req, res) => {
   res.json({ message: 'Note updated successfully', updatedNote });
 });
 
+// Read initial data and start the server
 readInitialData();
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
-// Save notes to db.json at regular intervals
-const saveInterval = 5 * 60 * 1000;
+// Save notes to db.json at regular intervals (e.g., every 5 minutes)
+const saveInterval = 5 * 60 * 1000; // 5 minutes (in milliseconds)
 setInterval(saveNotesToFile, saveInterval);
 
 app.delete('/api/notes/:id', (req, res) => {
@@ -98,7 +99,7 @@ app.delete('/api/notes/:id', (req, res) => {
   // Remove the note from the notes array
   notes.splice(noteIndex, 1);
 
-  // Save the updated notes to your data store
+  // Save the updated notes to your data store (e.g., db.json)
   saveNotesToFile();
 
   // Return a response indicating success

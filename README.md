@@ -8,7 +8,7 @@ You can create and save notes, once you refresh the page you can view the list o
 
 ## Instruction
 
-Visit the Jot-It-Down website: () and click "Get Started" to begin notetaking. From here you click on the + on the top right to begin typing your first note. Once you have typed out your note, go ahead and click the "Save" icon to save your note. From here you can refresh the page to view your saved notes on the left, or you can click on the + icon to start a new note. Once you see your saved notes on the left, you can click any note and start to edit, if you do edit and want to save changes, be sure to resave.
+Visit the Jot-It-Down website: (https://jot-itdown-7afb418b3767.herokuapp.com/) and click "Get Started" to begin notetaking. From here you click on the + on the top right to begin typing your first note. Once you have typed out your note, go ahead and click the "Save" icon to save your note. From here you can refresh the page to view your saved notes on the left, or you can click on the + icon to start a new note. Once you see your saved notes on the left, you can click any note and start to edit, if you do edit and want to save changes, be sure to resave.
 
 ## Technologies Used
 
